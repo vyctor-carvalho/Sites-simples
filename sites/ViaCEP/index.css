@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    font-family: 'Noto Sans' , sans-serif;
+    box-sizing: border-box;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagem {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#imagem > img {
+    width: 40wp;
+}
+#conteiner {
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #2f2841;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #00000056;
+}
+#mensagem {
+    color: aliceblue;
+    align-self: center;
+}
+#conteiner > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+#textfild{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+}
+.textfild > input{
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 10px 10px 15px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.textfild > input::placeholder{
+    color: #f0ffff94;
+}
+#Endereco{
+    display: none;
+    width: 100%;
+}
+.textEndereco {
+    color: #00ff88;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 10px 10px 15px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.btn-login{
+    width: 100%;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #2b134b;
+    z-index: 1;
+    background: #00ff88;
+    position: relative;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 17px;
+    outline: none;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    transition: all 400ms;
+    overflow: hidden;
+}
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 0px;
+    background-color: #212121;
+    z-index: -1;
+    outline: none;
+    box-shadow: 0px 10px 40px -12px rgba(0,0,0,0.27);
+    transition: all 400ms
+}   
+button:hover {
+    color: #e8e8e8;
+}       
+button:hover::before {
+    width: 100%;
+}

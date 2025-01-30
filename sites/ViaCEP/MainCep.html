@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Consulte seu CEP</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="imagem">
+                <img src="imagem_map.svg" alt="Imagem do mapa">
+            </div>
+            <div id="conteiner">
+                <h1>Consulte seu endereço</h1>
+                <div class="textfild">
+                    <input type="text" name="CEP" placeholder="CEP" id="cep" required>
+                    <button class="btn-login" id="btn" onclick="verEndereco()">Consultar</button>                    
+                    <div id="Endereco">
+                        <p class="textEndereco" id="estado"></p> 
+                        <p class="textEndereco" id="cidade"></p> 
+                        <p class="textEndereco" id="bairro"></p> 
+                        <p class="textEndereco" id="rua"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
